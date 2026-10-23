@@ -1,0 +1,99 @@
+body {
+    background-color: #070913;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', sans-serif;
+}
+
+/* Cyber Glassmorphism Panels */
+.glass-panel {
+    background: rgba(14, 18, 43, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(139, 92, 246, 0.2);
+}
+
+.glass-panel-hover {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-panel-hover:hover {
+    background: rgba(22, 28, 64, 0.85);
+    border-color: rgba(168, 85, 247, 0.5);
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.25), inset 0 0 12px rgba(168, 85, 247, 0.12);
+    transform: translateY(-4px);
+}
+
+/* Neon Glow Effects */
+.glow-text {
+    text-shadow: 0 0 12px rgba(168, 85, 247, 0.7), 0 0 24px rgba(139, 92, 246, 0.4);
+}
+
+.glow-cyan {
+    text-shadow: 0 0 12px rgba(6, 182, 212, 0.7);
+}
+
+/* Portal Halo Effect */
+.portal-ring {
+    position: relative;
+}
+
+.project-nav-menu > summary::-webkit-details-marker {
+    display: none;
+}
+
+.project-nav-menu[open] .project-nav-dropdown {
+    display: block;
+}
+
+.hero-portrait-image {
+    object-position: 47% 36%;
+    transform: translate(9%, 5%) scale(1.8);
+}
+
+.profile-avatar-image {
+    object-position: 47% 36%;
+    transform: translate(5%, 3%) scale(1.35);
+}
+
+.portal-ring::before {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    padding: 4px;
+    background: linear-gradient(135deg, #a855f7, #06b6d4, #3b82f6, #8b5cf6);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: spin 12s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #070913;
+}
+::-webkit-scrollbar-thumb {
+    background: #1e264d;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #8b5cf6;
+}
+
+/* Tech Skill Badge Hover */
+.tech-node {
+    transition: all 0.3s ease;
+}
+.tech-node:hover {
+    transform: scale(1.08) translateY(-3px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.4);
+    border-color: #a855f7;
+}

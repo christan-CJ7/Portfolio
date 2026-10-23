@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="border" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a855f7"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="58" height="58" rx="16" fill="#070913" stroke="url(#border)" stroke-width="4"/>
+  <text x="32" y="41" fill="#fff" font-family="Arial, sans-serif" font-size="22" font-weight="700" text-anchor="middle">CJ7</text>
+</svg>
